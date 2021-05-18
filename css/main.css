@@ -1,0 +1,373 @@
+body{
+    width: auto;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+}
+/* navigációs menüsor */
+.navigacio{
+    width: 7.5vh;
+    height: 100%;
+    position: fixed;
+    border: 2px solid black;
+    background: rgba(236, 161, 100, 0.15);
+    right: 0;
+    top: 0;
+}
+.szoclinkek{
+    position: relative;
+    top: 69vh;
+    text-align: center;
+}
+.szoclinkek img{
+    margin-left: 2px;
+    width: 6vh;
+    margin-top: 2vh;
+    text-align: center;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+}
+.menu img {
+    margin-left: 1.5px;
+    width: 7.5vh;
+    text-align: center;
+    cursor: pointer;
+}
+#lenyilo_menu{
+    display: block;
+    position: absolute;
+    right: 10vh;
+    top: 12%;
+    background: rgba(46, 187, 206, 0.65);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 30px;
+    max-height: max-content;
+    padding: 15px 10px 10px 10px;
+}
+#lenyilo_menu.latszodik{
+    display: none;
+}
+.almenu{
+    padding: 5px 5px 5px 5px;
+    font-family: 'Bangers', cursive;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.almenu:hover{
+    color:rgb(214, 98, 78);
+    opacity: 1;
+}
+/* buborékok */
+.buborek{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -85px;
+}
+.buborek img{
+    width: 8.75vh;
+    animation: buborek 8s linear infinite;
+}
+@keyframes buborek{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    75%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-105vh);
+        opacity: 0;
+    }
+}
+.buborek img:nth-child(1){
+    animation-delay: 1s;
+    width: 8vh;
+}
+.buborek img:nth-child(2){
+    animation-delay: 6s;
+}
+.buborek img:nth-child(3){
+    animation-delay: 3.5s;
+}
+.buborek img:nth-child(4){
+    animation-delay: 7.45s;
+    width: 7.65vh;
+}
+.buborek img:nth-child(5){
+    animation-delay: 5.25s;
+}
+.buborek img:nth-child(6){
+    animation-delay: 2.25s;
+    width: 8.25vh;
+}
+.buborek img:nth-child(7){
+    animation-delay: 6.65s;
+}
+/* nyitólap */
+.stella{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: max-content;
+    background-image: url(képek/hatterkep_01.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.kezdes{
+    color: #fbfcfd;
+    position: relative;
+    top: 25px;
+    text-align: center;
+    margin-right: 8.35vh;
+}
+.cim{
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+    margin: 15px 0 20px 10px;
+    color: sandybrown;
+}
+h1{
+    font-size: 17vh;
+    font-family: 'Bangers', cursive;
+    margin-right: 2px;
+}
+h2{
+    font-size: 7vh;
+    color: sandybrown; 
+}
+h3{
+    font-size: 5vh;
+    color: ivory;
+}
+h4{
+    font-size: 3vh;
+    margin: 0px;
+}
+button{
+    color: ivory;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 25px;
+    background-color: rgba(132, 160, 179, 0.3);
+    border: 3px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background: rgba(235, 176, 89, 0.3);
+}
+.vers{
+    position: relative;
+    margin-top: 85px;
+    margin-right: 8vh;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: sandybrown; 
+    font-family: 'Playball', cursive;
+}
+/* több rólam */
+.terra{    	
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-image: url(képek/hatterkep_02.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.tobbrolam{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: ivory;
+    padding: 2vh 5vh 2vh 5vh;
+    margin-right: 8vh;
+}
+.profilkep{
+    text-align: center;
+}
+.tobbrolam img{
+    margin: 2vh 2vh 2vh 0;
+    height: 27vh;
+    width: 32vh;
+    text-align: center;
+    border: 10px solid rgba(214, 98, 78, 0.5);
+    border-radius: 10px;
+}
+details{
+    position: relative;
+    background-color: rgba(132, 179, 175, 0.75);
+    text-align: center;
+    left: 50%;
+    margin-left: -24.5vh;
+    margin-bottom: 150px;
+    margin-top: 25px;
+    width: 38vh;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+details .rejtett{
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 13px;
+    text-align: center;
+}
+summary{
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+/* projecteim */
+.ignis{
+    width: 100%;
+    height: max-content;
+    background-image: url(képek/hatterkep_04.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.projecteim_szoveg{
+    margin-right: 8.25vh;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 40px 10px 40px;
+    font-size:  3vh;
+    font-weight: bold;
+    color: ivory;
+}
+.projecteim{
+    margin: 10px 8vh 25px 0;
+    text-align: center;
+    padding-bottom: 20px;   
+}
+.doboz img{
+    width: 30vh;
+}
+.doboz{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    max-width: 32vh;
+    font-weight: bold;
+    font-size: 2.75vh;
+    padding: 0 20px;
+    background-color: rgba(132, 160, 179, 0.75);
+    margin: 20px 20px 20px 20px;
+    right: 2vh;
+}
+/* képek */
+.imaginibus{
+    width: 100%;
+    height: max-content;
+    background-image: url(képek/hatterkep_03.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.kepek_elhelyezkedes{
+    text-align: center;
+}
+.kepek{
+    position: relative;
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    right: 3.75vh;
+}
+.kepek img{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 35vh;
+    height: 30vh;
+    border: 10px solid rgba(78, 187, 214, 0.5);
+    border-radius: 10px;
+}
+.kepek_boritas{
+    position: absolute;
+    width: 35vh;
+    height: 30vh;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(206, 142, 46, 0.5);
+    color: ivory;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.kepek_boritas:hover{
+    opacity: 1;
+}
+.kepek_cim{
+    font-size: 3.75vh;
+    font-weight: bold;
+}
+.kepek_leiras{
+    font-size: 2.25vh;
+    font-weight: bold;
+    margin: 20px 10px 0 10px;
+}
+/* weboldalterv */
+.stella{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: max-content;
+    background-image: url(képek/hatterkep_01.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+h2{
+    font-size: 7vh;
+    color: sandybrown; 
+}
+h3{
+    font-size: 5vh;
+    color: ivory;
+}
+.weboldalterv{
+    position: relative;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: ivory;
+    margin: 0 10vh 0 2.5vh;
+}
+.weboldalterv img{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin-top: 40px;
+    border: 10px solid rgba(221, 155, 79, 0.5);
+    border-radius: 10px;
+}
